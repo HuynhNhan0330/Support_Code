@@ -9,9 +9,9 @@ private:
     int n;
     vector <ll> h;
 public:
-    void init(int nn)
+    void init()
     {
-        n = nn;
+        cin >> n;
         h.resize(n);
         for (int i = 0; i < n; ++i) cin >> h[i];
     }
@@ -46,9 +46,9 @@ public:
     }
     void pop_heap()
     {
-        int n = h.size();
-        if (n==0) return;
-        h[0] = h[n-1];
+        int length = h.size();
+        if (length == 0) return;
+        h[0] = h[length-1];
         h.pop_back();
         min_heap(0);
     }

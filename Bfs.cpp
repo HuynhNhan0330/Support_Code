@@ -4,13 +4,15 @@
 
 using namespace std;
 
+const int xmax = 1e5+5;
 class bfs
 {
 private:
     int n;
-    vector <int> g[100005];
+    vector <int> g[xmax];
     queue <int> s;
-    bool check[100005];
+    bool check[xmax];
+    int path[xmax];
 public:
     void do_bfs(int x)
     {
@@ -26,6 +28,7 @@ public:
                 if (check[v]) continue;
                 check[v] = 1;
                 s.push(v);
+                path[v] = u;
             }
         }
     }

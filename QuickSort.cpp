@@ -9,11 +9,11 @@ int partition(int arr[], int low, int high) {
     for (int j = low; j < high; j++) {
         if (arr[j] < pivot) {
             i++;
-            std::swap(arr[i], arr[j]);
+            swap(arr[i], arr[j]);
         }
     }
 
-    std::swap(arr[i + 1], arr[high]);
+    swap(arr[i + 1], arr[high]);
     return i + 1;
 }
 

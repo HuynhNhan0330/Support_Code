@@ -10,7 +10,7 @@ void selectionSort(int arr[], int n) {
                 minIndex = j;
             }
         }
-        std::swap(arr[i], arr[minIndex]);
+        swap(arr[i], arr[minIndex]);
     }
 }
 

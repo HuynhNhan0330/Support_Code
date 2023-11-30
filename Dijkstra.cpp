@@ -13,7 +13,7 @@ private:
     struct node
     {
         int d1;
-        int c; // chi phi
+        int c; // const
     };
     int n;
     int d[xmax];

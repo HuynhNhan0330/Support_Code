@@ -37,7 +37,7 @@ void prim(int s)
         int u = qu.top().second;
         qu.pop();
         visited[u] = 1;
-        for (auto [w,v] : graph[u])
+        for (auto [w, v] : graph[u])
         {
           if (!visited[v] && dist[v] > w)
 		  {
